@@ -8,7 +8,7 @@ export default function Log () {
 
     useEffect(() => {
 
-        if (logPannel == false) {
+        if (logPannel === false) {
             document.querySelector('.signup').display = 'none';
             document.querySelector('.login').display = 'block';
         } else {
@@ -78,7 +78,7 @@ export default function Log () {
 
                 <button type="submit" className="logbtn" >Connexion</button>
 
-               <a onClick={() => setLogPannel(!logPannel)} >Pas encore inscrit ?</a> 
+               <a href="/" onClick={() => setLogPannel(!logPannel)} >Pas encore inscrit ?</a> 
             </form>   
 
 
