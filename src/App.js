@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
 import Header_nav from './Components/Header_nav';
+import Footer from './Components/Footer';
 import Log from './Views/Log'
 import Articles from './Views/Articles'
 import Commande_Ok from './Views/Commande_Ok'
@@ -33,6 +34,8 @@ function App() {
          <Route path='/gestion-articles' element={<GestionArticles />} ></Route> 
          <Route path='/gestion-admin' element={<GestionAdmin />} ></Route> 
       </Routes>
+
+      <Footer /> 
     </div>
   );
 }
